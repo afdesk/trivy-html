@@ -2,11 +2,11 @@ package render
 
 import (
 	"embed"
-	_ "embed"
 	"encoding/json"
 	"io/fs"
 	"os"
-	"strings"
+	"path/filepath"
+	"slices"
 	"text/template"
 
 	k8s "github.com/aquasecurity/trivy/pkg/k8s/report"
@@ -14,7 +14,7 @@ import (
 	"golang.org/x/xerrors"
 )
 
-//go:embed template/*
+//go:embed templates/*
 var templates embed.FS
 
 var extensions = []string{".tpl", ".js", ".css"}
@@ -36,7 +36,7 @@ func Render(fileName string, inputData []byte) error {
 		results = append(results, resource.Results...)
 	}
 
-	templateFS, err := fs.Sub(templates, "template")
+	templateFS, err := fs.Sub(templates, "templates")
 	if err != nil {
 		return xerrors.Errorf("error loading templates: %w", err)
 	}
@@ -77,12 +77,14 @@ func collectFiles(templateFS fs.FS) ([]string, error) {
 			return xerrors.Errorf("error listing files in %s: %w", path, err)
 		}
 
-		for _, ext := range extensions {
-			if !d.IsDir() && strings.HasSuffix(path, ext) {
-				files = append(files, path)
-				break
-			}
+		if d.IsDir() {
+			return nil
 		}
+
+		if slices.Contains(extensions, filepath.Ext(path)) {
+			files = append(files, path)
+		}
+
 		return nil
 	})
 
