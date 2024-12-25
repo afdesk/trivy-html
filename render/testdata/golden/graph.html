@@ -444,7 +444,7 @@ code.hljs {
     </style>
 </head>
 <body>
-<h1 id="report-title">Trivy Report - <span class="report-title__target"> alpine:latest</span>
+<h1 id="report-title">Trivy Report - <span class="report-title__target"> log-storage</span>
 </h1>
 <div class="filter_bar">
     <input type="text" placeholder="Search.."
@@ -484,150 +484,7 @@ code.hljs {
 <div id="info"></div>
 
 <div class="header">
-    <h3 class="header__title ta-center"> alpine:latest </h3>
-</div>
-<table>
-    <thead>
-    <tr class="sub-header">
-        <th data-type="string" data-sortable="true"><span> Package </span>
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-        <th data-type="string" data-sortable="true"><span> Vulnerability ID </span>
-            <svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-        <th data-type="severity" data-sortable="true"><span> Severity </span>
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-        <th data-type="string" data-sortable="true"><span> Installed Version </span>
-            <svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-        <th data-type="string" data-sortable="false"><span> Fixed Version </span>
-            <svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-        <th data-type="string" data-sortable="false"><span> Links </span>
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-    </tr>
-    </thead>
-    <tbody data-main="true">
-    <tr class="filterable">
-        <td class="pkg-name break-word">libcrypto3</td>
-        <td class="vuln">CVE-2024-9143</td>
-        <td class="severity ta-center">LOW</td>
-        <td class="pkg-version">3.3.2-r0</td>
-        <td class="fixed-version">3.3.2-r1</td>
-        <td class="links" data-more-links="off">
-            <a href="https://access.redhat.com/security/cve/CVE-2024-9143">https://access.redhat.com/security/cve/CVE-2024-9143</a>
-            <a href="https://github.com/openssl/openssl/commit/72ae83ad214d2eef262461365a1975707f862712">https://github.com/openssl/openssl/commit/72ae83ad214d2eef262461365a1975707f862712</a>
-            <a href="https://github.com/openssl/openssl/commit/bc7e04d7c8d509fb78fc0e285aa948fb0da04700">https://github.com/openssl/openssl/commit/bc7e04d7c8d509fb78fc0e285aa948fb0da04700</a>
-            <a href="https://github.com/openssl/openssl/commit/c0d3e4d32d2805f49bec30547f225bc4d092e1f4">https://github.com/openssl/openssl/commit/c0d3e4d32d2805f49bec30547f225bc4d092e1f4</a>
-            <a href="https://github.com/openssl/openssl/commit/fdf6723362ca51bd883295efe206cb5b1cfa5154">https://github.com/openssl/openssl/commit/fdf6723362ca51bd883295efe206cb5b1cfa5154</a>
-            <a href="https://github.openssl.org/openssl/extended-releases/commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a">https://github.openssl.org/openssl/extended-releases/commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a</a>
-            <a href="https://github.openssl.org/openssl/extended-releases/commit/9d576994cec2b7aa37a91740ea7e680810957e41">https://github.openssl.org/openssl/extended-releases/commit/9d576994cec2b7aa37a91740ea7e680810957e41</a>
-            <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-9143">https://nvd.nist.gov/vuln/detail/CVE-2024-9143</a>
-            <a href="https://openssl-library.org/news/secadv/20241016.txt">https://openssl-library.org/news/secadv/20241016.txt</a>
-            <a href="https://www.cve.org/CVERecord?id=CVE-2024-9143">https://www.cve.org/CVERecord?id=CVE-2024-9143</a>
-        </td>
-    </tr>
-    <tr class="filterable">
-        <td class="pkg-name break-word">libssl3</td>
-        <td class="vuln">CVE-2024-9143</td>
-        <td class="severity ta-center">LOW</td>
-        <td class="pkg-version">3.3.2-r0</td>
-        <td class="fixed-version">3.3.2-r1</td>
-        <td class="links" data-more-links="off">
-            <a href="https://access.redhat.com/security/cve/CVE-2024-9143">https://access.redhat.com/security/cve/CVE-2024-9143</a>
-            <a href="https://github.com/openssl/openssl/commit/72ae83ad214d2eef262461365a1975707f862712">https://github.com/openssl/openssl/commit/72ae83ad214d2eef262461365a1975707f862712</a>
-            <a href="https://github.com/openssl/openssl/commit/bc7e04d7c8d509fb78fc0e285aa948fb0da04700">https://github.com/openssl/openssl/commit/bc7e04d7c8d509fb78fc0e285aa948fb0da04700</a>
-            <a href="https://github.com/openssl/openssl/commit/c0d3e4d32d2805f49bec30547f225bc4d092e1f4">https://github.com/openssl/openssl/commit/c0d3e4d32d2805f49bec30547f225bc4d092e1f4</a>
-            <a href="https://github.com/openssl/openssl/commit/fdf6723362ca51bd883295efe206cb5b1cfa5154">https://github.com/openssl/openssl/commit/fdf6723362ca51bd883295efe206cb5b1cfa5154</a>
-            <a href="https://github.openssl.org/openssl/extended-releases/commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a">https://github.openssl.org/openssl/extended-releases/commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a</a>
-            <a href="https://github.openssl.org/openssl/extended-releases/commit/9d576994cec2b7aa37a91740ea7e680810957e41">https://github.openssl.org/openssl/extended-releases/commit/9d576994cec2b7aa37a91740ea7e680810957e41</a>
-            <a href="https://nvd.nist.gov/vuln/detail/CVE-2024-9143">https://nvd.nist.gov/vuln/detail/CVE-2024-9143</a>
-            <a href="https://openssl-library.org/news/secadv/20241016.txt">https://openssl-library.org/news/secadv/20241016.txt</a>
-            <a href="https://www.cve.org/CVERecord?id=CVE-2024-9143">https://www.cve.org/CVERecord?id=CVE-2024-9143</a>
-        </td>
-    </tr>
-    </tbody>
-</table>
-<div class="header">
-    <h3 class="header__title ta-center">Packages</h3>
-</div>
-
-<table>
-    <thead>
-    <tr class="sub-header">
-        <th data-type="string" data-sortable="true"><span> ID </span>
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-        <th data-type="string" data-sortable="true"><span> Name </span>
-            <svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-        <th data-type="string" data-sortable="true"><span> Version </span>
-            <svg xmlns="http://www.w3.org/2000/svg"
-                 width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-        <th data-type="string" data-sortable="true"><span> SrcName </span>
-            <svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-        <th data-type="string" data-sortable="true"><span> SrcVersion </span>
-            <svg
-                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
-            </svg>
-        </th>
-
-    </tr>
-    </thead>
-    <tbody data-main="true">
-    <tr class="filterable">
-        <td class="pkg-version">libfreetype6@2.13.2+dfsg-1build3</td>
-        <td class="pkg-key-name">libfreetype6</td>
-        <td class="pkg-key-version ta-center">2.13.2+dfsg</td>
-        <td class="pkg-key-src-name">freetype</td>
-        <td class="pkg-key-src-version">2.13.2+dfsg</td>
-    </tr>
-    <tr class="filterable">
-        <td class="pkg-version">libgcc-s1@14-20240412-0ubuntu1</td>
-        <td class="pkg-key-name">libgcc-s1</td>
-        <td class="pkg-key-version ta-center">14-20240412</td>
-        <td class="pkg-key-src-name">gcc-14</td>
-        <td class="pkg-key-src-version">14-20240412</td>
-    </tr>
-    </tbody>
-</table>
-
-<div class="header">
-    <h3 class="header__title ta-center"> alpine:latest </h3>
+    <h3 class="header__title ta-center"> log-storage/modules/foo/modules/bar/modules/baz/main.tf </h3>
 </div>
 <div class="container">
     <table class="misc-table" data-index="1">
@@ -667,35 +524,101 @@ code.hljs {
         </thead>
         <tbody data-main="true">
         <tr class="misconf-item filterable" data-index="1 0" title="Click to see graph">
-            <td class="misc-type">Dockerfile Security Check</td>
-            <td class="misc-id"> DS001</td>
-            <td class="misc-check">':latest' tag used</td>
-            <td class="severity ta-center">MEDIUM</td>
-            <td class="misc-msg">Specify a tag in the 'FROM' statement for image 'ansibleplaybookbundle/apb-base'
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0086</td>
+            <td class="misc-check">S3 Access block should block public ACL</td>
+            <td class="severity ta-center">HIGH</td>
+            <td class="misc-msg">No public access block so not blocking public acls
                 <br>
-                <a href="https://avd.aquasec.com/misconfig/ds001">https://avd.aquasec.com/misconfig/ds001</a>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0086">https://avd.aquasec.com/misconfig/avd-aws-0086</a>
                 </br>
             </td>
         </tr>
         <tr class="misconf-item filterable" data-index="1 1" title="Click to see graph">
-            <td class="misc-type">Dockerfile Security Check</td>
-            <td class="misc-id"> DS011</td>
-            <td class="misc-check">COPY with more than two arguments not ending with slash</td>
-            <td class="severity ta-center">CRITICAL</td>
-            <td class="misc-msg">Slash is expected at the end of COPY command argument '}}'
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0087</td>
+            <td class="misc-check">S3 Access block should block public policy</td>
+            <td class="severity ta-center">HIGH</td>
+            <td class="misc-msg">No public access block so not blocking public policies
                 <br>
-                <a href="https://avd.aquasec.com/misconfig/ds011">https://avd.aquasec.com/misconfig/ds011</a>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0087">https://avd.aquasec.com/misconfig/avd-aws-0087</a>
                 </br>
             </td>
         </tr>
         <tr class="misconf-item filterable" data-index="1 2" title="Click to see graph">
-            <td class="misc-type">Dockerfile Security Check</td>
-            <td class="misc-id"> DS026</td>
-            <td class="misc-check">No HEALTHCHECK defined</td>
-            <td class="severity ta-center">LOW</td>
-            <td class="misc-msg">Add HEALTHCHECK instruction in your Dockerfile
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0088</td>
+            <td class="misc-check">Unencrypted S3 bucket.</td>
+            <td class="severity ta-center">HIGH</td>
+            <td class="misc-msg">Bucket does not have encryption enabled
                 <br>
-                <a href="https://avd.aquasec.com/misconfig/ds026">https://avd.aquasec.com/misconfig/ds026</a>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0088">https://avd.aquasec.com/misconfig/avd-aws-0088</a>
+                </br>
+            </td>
+        </tr>
+        <tr class="misconf-item filterable" data-index="1 3" title="Click to see graph">
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> s3-bucket-logging</td>
+            <td class="misc-check">S3 Bucket Logging</td>
+            <td class="severity ta-center">LOW</td>
+            <td class="misc-msg">Bucket has logging disabled
+                <br>
+                <a href="https://avd.aquasec.com/misconfig/s3-bucket-logging">https://avd.aquasec.com/misconfig/s3-bucket-logging</a>
+                </br>
+            </td>
+        </tr>
+        <tr class="misconf-item filterable" data-index="1 4" title="Click to see graph">
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0090</td>
+            <td class="misc-check">S3 Data should be versioned</td>
+            <td class="severity ta-center">MEDIUM</td>
+            <td class="misc-msg">Bucket does not have versioning enabled
+                <br>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0090">https://avd.aquasec.com/misconfig/avd-aws-0090</a>
+                </br>
+            </td>
+        </tr>
+        <tr class="misconf-item filterable" data-index="1 5" title="Click to see graph">
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0091</td>
+            <td class="misc-check">S3 Access Block should Ignore Public Acl</td>
+            <td class="severity ta-center">HIGH</td>
+            <td class="misc-msg">No public access block so not blocking public acls
+                <br>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0091">https://avd.aquasec.com/misconfig/avd-aws-0091</a>
+                </br>
+            </td>
+        </tr>
+        <tr class="misconf-item filterable" data-index="1 6" title="Click to see graph">
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0093</td>
+            <td class="misc-check">S3 Access block should restrict public bucket to limit access</td>
+            <td class="severity ta-center">HIGH</td>
+            <td class="misc-msg">No public access block so not restricting public buckets
+                <br>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0093">https://avd.aquasec.com/misconfig/avd-aws-0093</a>
+                </br>
+            </td>
+        </tr>
+        <tr class="misconf-item filterable" data-index="1 7" title="Click to see graph">
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0094</td>
+            <td class="misc-check">S3 buckets should each define an aws_s3_bucket_public_access_block</td>
+            <td class="severity ta-center">LOW</td>
+            <td class="misc-msg">Bucket does not have a corresponding public access block.
+                <br>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0094">https://avd.aquasec.com/misconfig/avd-aws-0094</a>
+                </br>
+            </td>
+        </tr>
+        <tr class="misconf-item filterable" data-index="1 8" title="Click to see graph">
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0132</td>
+            <td class="misc-check">S3 encryption should use Customer Managed Keys</td>
+            <td class="severity ta-center">HIGH</td>
+            <td class="misc-msg">Bucket does not encrypt data with a customer managed key.
+                <br>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0132">https://avd.aquasec.com/misconfig/avd-aws-0132</a>
                 </br>
             </td>
         </tr>
@@ -726,44 +649,90 @@ code.hljs {
 </div>
 
 <div class="header">
-    <h3 class="header__title ta-center"> /etc/ssl/private/ssl-cert-snakeoil.key </h3>
+    <h3 class="header__title ta-center"> log-storage/modules/foo/modules/bar/modules/baz/main.tf </h3>
 </div>
-<div class="secret-results">
-    <h3 class="secret-results__title">
-        <span class="secret-results__title-target"> /etc/ssl/private/ssl-cert-snakeoil.key</span>
-        <span class="secret-results__title-class"> (secret)</span>
-    </h3>
+<div class="container">
+    <table class="misc-table" data-index="2">
+        <thead>
+        <tr class="sub-header">
+            <th data-type="string" data-sortable="true"><span> Type </span>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
+                </svg>
+            </th>
+            <th data-type="string" data-sortable="true"><span> Misconf ID </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
+                </svg>
+            </th>
+            <th data-type="string" data-sortable="true"><span> Check </span>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
+                </svg>
+            </th>
+            <th data-type="severity" data-sortable="true"><span> Severity </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
+                </svg>
+            </th>
 
-    <div class="secret-results__content">
-        <div class="secret">
-            <div class="secret__head">
-                <span class="secret__severity severity-HIGH"> HIGH </span>
-                <span class="secret__type"> AsymmetricPrivateKey (private-key)</span>
-            </div>
-            <div class="secret__title"> Asymmetric Private Key</div>
-            <div class="secret__src">
-                <span class="secret__src-file">/etc/ssl/private/ssl-cert-snakeoil.key</span>
-                <span class="secret__src-delimiter">:</span>
-                <span class="secret__src-lines">
-                    
-                                1
-                            </span>
-            </div>
-            <div class="secret__code">
-                <div class="secret__line secret__line-cause">
-                    <div class="secret__line-number">1</div>
-                    <div class="secret__line-code">
-                        <pre> -----BEGIN PRIVATE KEY-----*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END PRIVATE KEY</pre>
-                    </div>
-                </div>
-                <div class="secret__line">
-                    <div class="secret__line-number">2</div>
-                    <div class="secret__line-code">
-                        <pre>  </pre>
-                    </div>
-                </div>
+            <th data-type="string" data-sortable="false"><span> Message </span>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     width="16" height="16" viewBox="0 0 16 16">
+                    <path fill="#444" d="M11 7H5l3-4zM5 9h6l-3 4z"/>
+                </svg>
+            </th>
+
+        </tr>
+        </thead>
+        <tbody data-main="true">
+        <tr class="misconf-item filterable" data-index="2 0" title="Click to see graph">
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0086</td>
+            <td class="misc-check">S3 Access block should block public ACL</td>
+            <td class="severity ta-center">HIGH</td>
+            <td class="misc-msg">No public access block so not blocking public acls
+                <br>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0086">https://avd.aquasec.com/misconfig/avd-aws-0086</a>
+                </br>
+            </td>
+        </tr>
+        <tr class="misconf-item filterable" data-index="2 1" title="Click to see graph">
+            <td class="misc-type">Terraform Security Check</td>
+            <td class="misc-id"> AVD-AWS-0086</td>
+            <td class="misc-check">S3 Access block should block public ACL</td>
+            <td class="severity ta-center">HIGH</td>
+            <td class="misc-msg">No public access block so not blocking public acls
+                <br>
+                <a href="https://avd.aquasec.com/misconfig/avd-aws-0086">https://avd.aquasec.com/misconfig/avd-aws-0086</a>
+                </br>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="content" data-index="2">
+        <div class="content-header">
+            <span></span>
+            <div class="graph-buttons">
+                <button class="open-window-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="16" fill="white">
+                        <path d="M14 3h7v7M21 3L10 14M3 10v11h11M3 21L21 3" stroke="#fff" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="close-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white">
+                        <path d="M18 6L6 18M6 6l12 12" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </button>
             </div>
         </div>
+        <div class="graph" data-index="2"></div>
+
     </div>
 </div>
 
@@ -1168,7 +1137,7 @@ module.exports.definer = hljsDefineTerraform; </script>
     hljs.registerLanguage('hcl', window.hljsDefineTerraform);
 </script>
 <script defer>
-    const results = [{"Target":"alpine:latest","Class":"os-pkgs","Type":"alpine","Packages":[{"ID":"libfreetype6@2.13.2+dfsg-1build3","Name":"libfreetype6","Identifier":{"PURL":"pkg:deb/ubuntu/libfreetype6@2.13.2%2Bdfsg-1build3?arch=amd64\u0026distro=ubuntu-24.04","UID":"29c9b32733f1a02d"},"Version":"2.13.2+dfsg","Release":"1build3","Arch":"amd64","SrcName":"freetype","SrcVersion":"2.13.2+dfsg","SrcRelease":"1build3","Licenses":["FTL","MIT","BSD-3-Clause","FSFAP","GPL-3.0-or-later","GPL-2.0-or-later","Public-Domain","MIT-SMC","BSL-1.0","MIT-Modern-Variant","Zlib","OpenGroup-MIT","GPL-2.0-only","GPL-3.0-only"],"Maintainer":"Ubuntu Developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e","DependsOn":["libbrotli1@1.1.0-2build2","libbz2-1.0@1.0.8-5.1build0.1","libc6@2.39-0ubuntu8.3","libpng16-16t64@1.6.43-5build1","zlib1g@1:1.3.dfsg-3.1ubuntu2"],"Layer":{"DiffID":"sha256:7b872bc9fea5cc58f2c8125159e1bfef1948c580d0a41de0086c2e7918a76b80"},"InstalledFiles":["/usr/lib/x86_64-linux-gnu/libfreetype.so.6","/usr/lib/x86_64-linux-gnu/libfreetype.so.6.20.1","/usr/share/doc/libfreetype6/README","/usr/share/doc/libfreetype6/changelog.Debian.gz","/usr/share/doc/libfreetype6/copyright"]},{"ID":"libgcc-s1@14-20240412-0ubuntu1","Name":"libgcc-s1","Identifier":{"PURL":"pkg:deb/ubuntu/libgcc-s1@14-20240412-0ubuntu1?arch=amd64\u0026distro=ubuntu-24.04","UID":"d304187ce4fbc624"},"Version":"14-20240412","Release":"0ubuntu1","Arch":"amd64","SrcName":"gcc-14","SrcVersion":"14-20240412","SrcRelease":"0ubuntu1","Maintainer":"Ubuntu Core developers \u003cubuntu-devel-discuss@lists.ubuntu.com\u003e","DependsOn":["gcc-14-base@14-20240412-0ubuntu1","libc6@2.39-0ubuntu8.3"],"Layer":{"DiffID":"sha256:f36fd4bb7334b7ae3321e3229d103c4a3e7c10a263379cc6a058b977edfb46de"},"InstalledFiles":["/usr/lib/x86_64-linux-gnu/libgcc_s.so.1","/usr/share/doc/libgcc-s1","/usr/share/lintian/overrides/libgcc-s1"]}],"Vulnerabilities":[{"VulnerabilityID":"CVE-2024-9143","PkgID":"libcrypto3@3.3.2-r0","PkgName":"libcrypto3","PkgIdentifier":{"PURL":"pkg:apk/alpine/libcrypto3@3.3.2-r0?arch=x86_64\u0026distro=3.20.3","UID":"33eb4551a5ab015e"},"InstalledVersion":"3.3.2-r0","FixedVersion":"3.3.2-r1","Status":"fixed","Layer":{"Digest":"sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170","DiffID":"sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85"},"PrimaryURL":"https://avd.aquasec.com/nvd/cve-2024-9143","DataSource":{"ID":"alpine","Name":"Alpine Secdb","URL":"https://secdb.alpinelinux.org/"},"Title":"openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access","Description":"Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted\nexplicit values for the field polynomial can lead to out-of-bounds memory reads\nor writes.\n\nImpact summary: Out of bound memory writes can lead to an application crash or\neven a possibility of a remote code execution, however, in all the protocols\ninvolving Elliptic Curve Cryptography that we're aware of, either only \"named\ncurves\" are supported, or, if explicit curve parameters are supported, they\nspecify an X9.62 encoding of binary (GF(2^m)) curves that can't represent\nproblematic input values. Thus the likelihood of existence of a vulnerable\napplication is low.\n\nIn particular, the X9.62 encoding is used for ECC keys in X.509 certificates,\nso problematic inputs cannot occur in the context of processing X.509\ncertificates.  Any problematic use-cases would have to be using an \"exotic\"\ncurve encoding.\n\nThe affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),\nand various supporting BN_GF2m_*() functions.\n\nApplications working with \"exotic\" explicit binary (GF(2^m)) curve parameters,\nthat make it possible to represent invalid field polynomials with a zero\nconstant term, via the above or similar APIs, may terminate abruptly as a\nresult of reading or writing outside of array bounds.  Remote code execution\ncannot easily be ruled out.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.","Severity":"LOW","CweIDs":["CWE-787"],"VendorSeverity":{"redhat":1,"ubuntu":1},"CVSS":{"redhat":{"V3Vector":"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L","V3Score":3.7}},"References":["https://access.redhat.com/security/cve/CVE-2024-9143","https://github.com/openssl/openssl/commit/72ae83ad214d2eef262461365a1975707f862712","https://github.com/openssl/openssl/commit/bc7e04d7c8d509fb78fc0e285aa948fb0da04700","https://github.com/openssl/openssl/commit/c0d3e4d32d2805f49bec30547f225bc4d092e1f4","https://github.com/openssl/openssl/commit/fdf6723362ca51bd883295efe206cb5b1cfa5154","https://github.openssl.org/openssl/extended-releases/commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a","https://github.openssl.org/openssl/extended-releases/commit/9d576994cec2b7aa37a91740ea7e680810957e41","https://nvd.nist.gov/vuln/detail/CVE-2024-9143","https://openssl-library.org/news/secadv/20241016.txt","https://www.cve.org/CVERecord?id=CVE-2024-9143"],"PublishedDate":"2024-10-16T17:15:18.13Z","LastModifiedDate":"2024-10-18T12:53:04.627Z"},{"VulnerabilityID":"CVE-2024-9143","PkgID":"libssl3@3.3.2-r0","PkgName":"libssl3","PkgIdentifier":{"PURL":"pkg:apk/alpine/libssl3@3.3.2-r0?arch=x86_64\u0026distro=3.20.3","UID":"aa5719d6e39bba43"},"InstalledVersion":"3.3.2-r0","FixedVersion":"3.3.2-r1","Status":"fixed","Layer":{"Digest":"sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170","DiffID":"sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85"},"PrimaryURL":"https://avd.aquasec.com/nvd/cve-2024-9143","DataSource":{"ID":"alpine","Name":"Alpine Secdb","URL":"https://secdb.alpinelinux.org/"},"Title":"openssl: Low-level invalid GF(2^m) parameters lead to OOB memory access","Description":"Issue summary: Use of the low-level GF(2^m) elliptic curve APIs with untrusted\nexplicit values for the field polynomial can lead to out-of-bounds memory reads\nor writes.\n\nImpact summary: Out of bound memory writes can lead to an application crash or\neven a possibility of a remote code execution, however, in all the protocols\ninvolving Elliptic Curve Cryptography that we're aware of, either only \"named\ncurves\" are supported, or, if explicit curve parameters are supported, they\nspecify an X9.62 encoding of binary (GF(2^m)) curves that can't represent\nproblematic input values. Thus the likelihood of existence of a vulnerable\napplication is low.\n\nIn particular, the X9.62 encoding is used for ECC keys in X.509 certificates,\nso problematic inputs cannot occur in the context of processing X.509\ncertificates.  Any problematic use-cases would have to be using an \"exotic\"\ncurve encoding.\n\nThe affected APIs include: EC_GROUP_new_curve_GF2m(), EC_GROUP_new_from_params(),\nand various supporting BN_GF2m_*() functions.\n\nApplications working with \"exotic\" explicit binary (GF(2^m)) curve parameters,\nthat make it possible to represent invalid field polynomials with a zero\nconstant term, via the above or similar APIs, may terminate abruptly as a\nresult of reading or writing outside of array bounds.  Remote code execution\ncannot easily be ruled out.\n\nThe FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.","Severity":"LOW","CweIDs":["CWE-787"],"VendorSeverity":{"redhat":1,"ubuntu":1},"CVSS":{"redhat":{"V3Vector":"CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L","V3Score":3.7}},"References":["https://access.redhat.com/security/cve/CVE-2024-9143","https://github.com/openssl/openssl/commit/72ae83ad214d2eef262461365a1975707f862712","https://github.com/openssl/openssl/commit/bc7e04d7c8d509fb78fc0e285aa948fb0da04700","https://github.com/openssl/openssl/commit/c0d3e4d32d2805f49bec30547f225bc4d092e1f4","https://github.com/openssl/openssl/commit/fdf6723362ca51bd883295efe206cb5b1cfa5154","https://github.openssl.org/openssl/extended-releases/commit/8efc0cbaa8ebba8e116f7b81a876a4123594d86a","https://github.openssl.org/openssl/extended-releases/commit/9d576994cec2b7aa37a91740ea7e680810957e41","https://nvd.nist.gov/vuln/detail/CVE-2024-9143","https://openssl-library.org/news/secadv/20241016.txt","https://www.cve.org/CVERecord?id=CVE-2024-9143"],"PublishedDate":"2024-10-16T17:15:18.13Z","LastModifiedDate":"2024-10-18T12:53:04.627Z"}]},{"Target":"alpine:latest","Class":"os-pkgs","Type":"alpine","Misconfigurations":[{"Type":"Dockerfile Security Check","ID":"DS001","AVDID":"AVD-DS-0001","Title":"':latest' tag used","Description":"When using a 'FROM' statement you should use a specific tag to avoid uncontrolled behavior when the image is updated.","Message":"Specify a tag in the 'FROM' statement for image 'ansibleplaybookbundle/apb-base'","Namespace":"builtin.dockerfile.DS001","Query":"data.builtin.dockerfile.DS001.deny","Resolution":"Add a tag to the image in the 'FROM' statement","Severity":"MEDIUM","PrimaryURL":"https://avd.aquasec.com/misconfig/ds001","References":["https://avd.aquasec.com/misconfig/ds001"],"Status":"FAIL","Layer":{"Digest":"sha256:a7903a792b0553b036f428af5d26f17e84bff3681ea6473c12b69ea02f58ef1d","DiffID":"sha256:bc7b05dae0335f636260e0da80e6ad0679747017134a422d1feb885fa961079a"},"CauseMetadata":{"Provider":"Dockerfile","Service":"general","StartLine":1,"EndLine":1,"Code":{"Lines":[{"Number":1,"Content":"FROM ansibleplaybookbundle/apb-base","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"FROM ansibleplaybookbundle/apb-base","FirstCause":true,"LastCause":true}]}}},{"Type":"Dockerfile Security Check","ID":"DS011","AVDID":"AVD-DS-0011","Title":"COPY with more than two arguments not ending with slash","Description":"When a COPY command has more than two arguments, the last one should end with a slash.","Message":"Slash is expected at the end of COPY command argument '}}'","Namespace":"builtin.dockerfile.DS011","Query":"data.builtin.dockerfile.DS011.deny","Resolution":"Add slash to last COPY argument","Severity":"CRITICAL","PrimaryURL":"https://avd.aquasec.com/misconfig/ds011","References":["https://docs.docker.com/engine/reference/builder/#copy","https://avd.aquasec.com/misconfig/ds011"],"Status":"FAIL","Layer":{"Digest":"sha256:a7903a792b0553b036f428af5d26f17e84bff3681ea6473c12b69ea02f58ef1d","DiffID":"sha256:bc7b05dae0335f636260e0da80e6ad0679747017134a422d1feb885fa961079a"},"CauseMetadata":{"Provider":"Dockerfile","Service":"general","StartLine":7,"EndLine":7,"Code":{"Lines":[{"Number":7,"Content":"COPY . /opt/ansible/roles/{{ role_name }}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"COPY . /opt/ansible/roles/{{ role_name }}","FirstCause":true,"LastCause":true}]}}},{"Type":"Dockerfile Security Check","ID":"DS026","AVDID":"AVD-DS-0026","Title":"No HEALTHCHECK defined","Description":"You should add HEALTHCHECK instruction in your docker container images to perform the health check on running containers.","Message":"Add HEALTHCHECK instruction in your Dockerfile","Namespace":"builtin.dockerfile.DS026","Query":"data.builtin.dockerfile.DS026.deny","Resolution":"Add HEALTHCHECK instruction in Dockerfile","Severity":"LOW","PrimaryURL":"https://avd.aquasec.com/misconfig/ds026","References":["https://blog.aquasec.com/docker-security-best-practices","https://avd.aquasec.com/misconfig/ds026"],"Status":"FAIL","Layer":{"Digest":"sha256:a7903a792b0553b036f428af5d26f17e84bff3681ea6473c12b69ea02f58ef1d","DiffID":"sha256:bc7b05dae0335f636260e0da80e6ad0679747017134a422d1feb885fa961079a"},"CauseMetadata":{"Provider":"Dockerfile","Service":"general","Code":{"Lines":null}}}]},{"Target":"/etc/ssl/private/ssl-cert-snakeoil.key","Class":"secret","Secrets":[{"RuleID":"private-key","Category":"AsymmetricPrivateKey","Severity":"HIGH","Title":"Asymmetric Private Key","StartLine":1,"EndLine":1,"Code":{"Lines":[{"Number":1,"Content":"-----BEGIN PRIVATE KEY-----*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END PRIVATE KEY","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"-----BEGIN PRIVATE KEY-----*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END PRIVATE KEY","FirstCause":true,"LastCause":true},{"Number":2,"Content":"","IsCause":false,"Annotation":"","Truncated":false,"FirstCause":false,"LastCause":false}]},"Match":"-----BEGIN PRIVATE KEY-----*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************-----END PRIVATE KEY","Layer":{"Digest":"sha256:0c57df616dbf8a5b9046359879d7cd6fc9cef5ec09b9aa407a9f0a278764ab9e","DiffID":"sha256:80f9a8427b1826f014f873dc471b6a89916ff79550bcd1c94aadd78c3f5bbdc7","CreatedBy":"apt-get update \u0026\u0026     apt-get upgrade -y \u0026\u0026     DEBIAN_FRONTEND=noninteractive apt-get install -y     debconf-utils \u0026\u0026     echo mariadb-server mysql-server/root_password password vulnerables | debconf-set-selections \u0026\u0026     echo mariadb-server mysql-server/root_password_again password vulnerables | debconf-set-selections \u0026\u0026     DEBIAN_FRONTEND=noninteractive apt-get install -y     apache2     mariadb-server     php     php-mysql     php-pgsql     php-pear     php-gd     \u0026\u0026     apt-get clean \u0026\u0026     rm -rf /var/lib/apt/lists/*"}}]}];
+    const results = [{"Target":"log-storage","Class":"config","Type":"terraform","MisconfSummary":{"Successes":38,"Failures":0}},{"Target":"log-storage/modules/foo/modules/bar/modules/baz/main.tf","Class":"config","Type":"terraform","MisconfSummary":{"Successes":0,"Failures":9},"Misconfigurations":[{"Type":"Terraform Security Check","ID":"AVD-AWS-0086","AVDID":"AVD-AWS-0086","Title":"S3 Access block should block public ACL","Description":"S3 buckets should block public ACLs on buckets and any objects they contain. By blocking, PUTs with fail if the object has any public ACL a.\n","Message":"No public access block so not blocking public acls","Namespace":"builtin.aws.s3.aws0086","Query":"data.builtin.aws.s3.aws0086.deny","Resolution":"Enable blocking any PUT calls with a public ACL specified","Severity":"HIGH","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0086","References":["https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html","https://avd.aquasec.com/misconfig/avd-aws-0086"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}},{"Type":"Terraform Security Check","ID":"AVD-AWS-0087","AVDID":"AVD-AWS-0087","Title":"S3 Access block should block public policy","Description":"S3 bucket policy should have block public policy to prevent users from putting a policy that enable public access.\n","Message":"No public access block so not blocking public policies","Namespace":"builtin.aws.s3.aws0087","Query":"data.builtin.aws.s3.aws0087.deny","Resolution":"Prevent policies that allow public access being PUT","Severity":"HIGH","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0087","References":["https://docs.aws.amazon.com/AmazonS3/latest/dev-retired/access-control-block-public-access.html","https://avd.aquasec.com/misconfig/avd-aws-0087"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}},{"Type":"Terraform Security Check","ID":"AVD-AWS-0088","AVDID":"AVD-AWS-0088","Title":"Unencrypted S3 bucket.","Description":"S3 Buckets should be encrypted to protect the data that is stored within them if access is compromised.\n","Message":"Bucket does not have encryption enabled","Namespace":"builtin.aws.s3.aws0088","Query":"data.builtin.aws.s3.aws0088.deny","Resolution":"Configure bucket encryption","Severity":"HIGH","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0088","References":["https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html","https://avd.aquasec.com/misconfig/avd-aws-0088"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}},{"Type":"Terraform Security Check","ID":"s3-bucket-logging","AVDID":"AVD-AWS-0089","Title":"S3 Bucket Logging","Description":"Ensures S3 bucket logging is enabled for S3 buckets","Message":"Bucket has logging disabled","Namespace":"builtin.aws.s3.aws0089","Query":"data.builtin.aws.s3.aws0089.deny","Resolution":"Add a logging block to the resource to enable access logging","Severity":"LOW","PrimaryURL":"https://avd.aquasec.com/misconfig/s3-bucket-logging","References":["https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html","https://docs.aws.amazon.com/AmazonS3/latest/userguide/enable-server-access-logging.html","https://avd.aquasec.com/misconfig/s3-bucket-logging"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}},{"Type":"Terraform Security Check","ID":"AVD-AWS-0090","AVDID":"AVD-AWS-0090","Title":"S3 Data should be versioned","Description":"Versioning in Amazon S3 is a means of keeping multiple variants of an object in the same bucket.\n\nYou can use the S3 Versioning feature to preserve, retrieve, and restore every version of every object stored in your buckets.\n\nWith versioning you can recover more easily from both unintended user actions and application failures.\n","Message":"Bucket does not have versioning enabled","Namespace":"builtin.aws.s3.aws0090","Query":"data.builtin.aws.s3.aws0090.deny","Resolution":"Enable versioning to protect against accidental/malicious removal or modification","Severity":"MEDIUM","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0090","References":["https://docs.aws.amazon.com/AmazonS3/latest/userguide/Versioning.html","https://avd.aquasec.com/misconfig/avd-aws-0090"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}},{"Type":"Terraform Security Check","ID":"AVD-AWS-0091","AVDID":"AVD-AWS-0091","Title":"S3 Access Block should Ignore Public Acl","Description":"S3 buckets should ignore public ACLs on buckets and any objects they contain. By ignoring rather than blocking, PUT calls with public ACLs will still be applied but the ACL will be ignored.\n","Message":"No public access block so not blocking public acls","Namespace":"builtin.aws.s3.aws0091","Query":"data.builtin.aws.s3.aws0091.deny","Resolution":"Enable ignoring the application of public ACLs in PUT calls","Severity":"HIGH","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0091","References":["https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html","https://avd.aquasec.com/misconfig/avd-aws-0091"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}},{"Type":"Terraform Security Check","ID":"AVD-AWS-0093","AVDID":"AVD-AWS-0093","Title":"S3 Access block should restrict public bucket to limit access","Description":"S3 buckets should restrict public policies for the bucket. By enabling, the restrict_public_buckets, only the bucket owner and AWS Services can access if it has a public policy.\n","Message":"No public access block so not restricting public buckets","Namespace":"builtin.aws.s3.aws0093","Query":"data.builtin.aws.s3.aws0093.deny","Resolution":"Limit the access to public buckets to only the owner or AWS Services (eg; CloudFront)","Severity":"HIGH","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0093","References":["https://docs.aws.amazon.com/AmazonS3/latest/dev-retired/access-control-block-public-access.html","https://avd.aquasec.com/misconfig/avd-aws-0093"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}},{"Type":"Terraform Security Check","ID":"AVD-AWS-0094","AVDID":"AVD-AWS-0094","Title":"S3 buckets should each define an aws_s3_bucket_public_access_block","Description":"The \"block public access\" settings in S3 override individual policies that apply to a given bucket, meaning that all public access can be controlled in one central types for that bucket. It is therefore good practice to define these settings for each bucket in order to clearly define the public access that can be allowed for it.\n","Message":"Bucket does not have a corresponding public access block.","Namespace":"builtin.aws.s3.aws0094","Query":"data.builtin.aws.s3.aws0094.deny","Resolution":"Define a aws_s3_bucket_public_access_block for the given bucket to control public access policies","Severity":"LOW","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0094","References":["https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html","https://avd.aquasec.com/misconfig/avd-aws-0094"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}},{"Type":"Terraform Security Check","ID":"AVD-AWS-0132","AVDID":"AVD-AWS-0132","Title":"S3 encryption should use Customer Managed Keys","Description":"Encryption using AWS keys provides protection for your S3 buckets. To increase control of the encryption and manage factors like rotation use customer managed keys.\n","Message":"Bucket does not encrypt data with a customer managed key.","Namespace":"builtin.aws.s3.aws0132","Query":"data.builtin.aws.s3.aws0132.deny","Resolution":"Enable encryption using customer managed keys","Severity":"HIGH","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0132","References":["https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html","https://avd.aquasec.com/misconfig/avd-aws-0132"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}}]},{"Target":"log-storage/modules/foo/modules/bar/modules/baz/main.tf","Class":"config","Type":"terraform","MisconfSummary":{"Successes":0,"Failures":9},"Misconfigurations":[{"Type":"Terraform Security Check","ID":"AVD-AWS-0086","AVDID":"AVD-AWS-0086","Title":"S3 Access block should block public ACL","Description":"S3 buckets should block public ACLs on buckets and any objects they contain. By blocking, PUTs with fail if the object has any public ACL a.\n","Message":"No public access block so not blocking public acls","Namespace":"builtin.aws.s3.aws0086","Query":"data.builtin.aws.s3.aws0086.deny","Resolution":"Enable blocking any PUT calls with a public ACL specified","Severity":"HIGH","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0086","References":["https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html","https://avd.aquasec.com/misconfig/avd-aws-0086"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}},{"Type":"Terraform Security Check","ID":"AVD-AWS-0086","AVDID":"AVD-AWS-0086","Title":"S3 Access block should block public ACL","Description":"S3 buckets should block public ACLs on buckets and any objects they contain. By blocking, PUTs with fail if the object has any public ACL a.\n","Message":"No public access block so not blocking public acls","Namespace":"builtin.aws.s3.aws0086","Query":"data.builtin.aws.s3.aws0086.deny","Resolution":"Enable blocking any PUT calls with a public ACL specified","Severity":"HIGH","PrimaryURL":"https://avd.aquasec.com/misconfig/avd-aws-0086","References":["https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html","https://avd.aquasec.com/misconfig/avd-aws-0086"],"Status":"FAIL","Layer":{},"CauseMetadata":{"Resource":"module.foo","Provider":"AWS","Service":"s3","StartLine":1,"EndLine":3,"Code":{"Lines":[{"Number":1,"Content":"resource \"aws_s3_bucket\" \"test\" {","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[38;5;33mresource\u001b[0m \u001b[38;5;37m\"aws_s3_bucket\"\u001b[0m \u001b[38;5;37m\"test\"\u001b[0m {","FirstCause":true,"LastCause":false},{"Number":2,"Content":"  bucket = \"test\"","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"  \u001b[38;5;245mbucket\u001b[0m = \u001b[38;5;37m\"test\"","FirstCause":false,"LastCause":false},{"Number":3,"Content":"}","IsCause":true,"Annotation":"","Truncated":false,"Highlighted":"\u001b[0m}","FirstCause":false,"LastCause":true}]},"Occurrences":[{"Resource":"module.baz","Filename":"log-storage/modules/foo/modules/bar/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.bar","Filename":"log-storage/modules/foo/main.tf","Location":{"StartLine":1,"EndLine":3}},{"Resource":"module.foo","Filename":"log-storage/main.tf","Location":{"StartLine":1,"EndLine":3}}]}}]}];
     const codeNode = 1 << 1;
 const occurrenceNode = 1 << 2;
 let inWindow = false;

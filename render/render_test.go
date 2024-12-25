@@ -23,6 +23,11 @@ func TestRender(t *testing.T) {
 			goldenPath: "testdata/golden/happy.html",
 		},
 		{
+			name:       "graph",
+			jsonPath:   "testdata/input/graph.json",
+			goldenPath: "testdata/golden/graph.html",
+		},
+		{
 			name:       "happy k8s",
 			jsonPath:   "testdata/input/happy-k8s.json",
 			goldenPath: "testdata/golden/happy-k8s.html",
